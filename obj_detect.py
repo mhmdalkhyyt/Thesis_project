@@ -79,6 +79,6 @@ def obj_detect(img):
 
   results = model.predict(image)
 
-  plot_bboxes(image, results[0].boxes.boxes, conf=0.5)
+  plot_bboxes(image, results[0].boxes.boxes, conf=0.1)
 
 obj_detect(sys.argv[1])
