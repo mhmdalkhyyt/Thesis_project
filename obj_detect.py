@@ -53,6 +53,7 @@ def plot_bboxes(image, boxes, labels=[], colors=[], score=True, conf=None):
 
   #show image
   image = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
+  cv2.imwrite('./lurred_imgs/blurred.png', image)
 
   try:
     import google.colab
@@ -77,8 +78,15 @@ def obj_detect(img):
   image = Image.open(img_url)
   image = np.asarray(image)
 
-  results = model.predict(image)
+  new_im = cv2
 
-  plot_bboxes(image, results[0].boxes.boxes, conf=0.1)
+  results = model.predict(image, save=True, save_txt=True)
 
+  #plot_bboxes(image, results[0].boxes.boxes, conf=0.5)
+  #cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
+
+
+  
+  
 obj_detect(sys.argv[1])
+

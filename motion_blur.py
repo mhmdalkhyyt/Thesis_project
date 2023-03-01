@@ -29,5 +29,7 @@ vertical_mb = cv2.filter2D(img, -1, kernel_v)
 horizonal_mb = cv2.filter2D(img, -1, kernel_h)
   
 # Save the outputs.
-cv2.imwrite('./lurred_imgs/me_v.jpg', vertical_mb)
-cv2.imwrite('./lurred_imgs/me_h.jpg', horizonal_mb)
+#cv2.imwrite('./lurred_imgs/me_v.jpg', vertical_mb)
+#cv2.imwrite('./lurred_imgs/me_h.jpg', horizonal_mb)
+cv2.imshow('', img)
+cv2.waitKey(0)

@@ -23,6 +23,7 @@ size_of_blurred_files = len(blurred_files)
 i = 0
 while(i < size_of_blurred_files):
     subprocess.run(f"python ./obj_detect.py {blurred_files[i]}")
+    
     i = i+1
 
 
