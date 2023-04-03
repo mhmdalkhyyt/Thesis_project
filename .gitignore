@@ -1,0 +1,18 @@
+#ignore upload of combitech dataset
+clear_drone/till_exjobbare/
+
+
+#ignore upload of stanford dataset
+stanford-dataset/
+
+#ignore upload of training_images
+training_images/
+
+#ignore upload of blurry_cars
+blurry_cars
+
+#ignore upload of training/files
+training/till_exjobbare
+training/Tre_trad
+training/Tva_trad 
+
