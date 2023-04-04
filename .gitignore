@@ -3,7 +3,7 @@ clear_drone/till_exjobbare/
 
 
 #ignore upload of stanford dataset
-stanford-dataset/
+datasets/datasets/
 
 #ignore upload of training_images
 training_images/
