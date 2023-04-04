@@ -16,3 +16,8 @@ training/till_exjobbare
 training/Tre_trad
 training/Tva_trad 
 
+
+#ignore training dataset
+
+training/runs/
+
