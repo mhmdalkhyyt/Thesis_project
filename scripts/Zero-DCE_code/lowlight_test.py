@@ -14,7 +14,13 @@ from torchvision import transforms
 from PIL import Image
 import glob
 import time
+import gc
 
+
+print(torch.cuda.memory_allocated)
+torch.cuda.empty_cache()
+gc.collect()
+print(torch.cuda.memory_allocated)
 
  
 def lowlight(image_path):
